@@ -71,6 +71,20 @@ button.cancel {
 }
 
 .main{
+  margin: 10px;
   display: flex;
   flex-direction: column;
+  gap: 10px;
+}
+
+.section-1 {
+  font-weight: bolder;
+  font-size: larger;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon-wrap {
+  padding: 10px;
 }
