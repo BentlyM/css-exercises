@@ -1,16 +1,42 @@
 body {
+  display: flex;
+  flex-direction: column;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   margin: 0;
   min-height: 100vh;
 }
 
 .header {
+  display: flex;
+  align-items: center;
+  font-weight: bolder;
+  font-size: 2rem;
+  padding-left: 10px;
   height: 72px;
   background: darkmagenta;
   color: white;
 }
 
+.main {
+  display: flex;
+}
+
+.content > div {
+  width: 300px;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
 .footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 72px;
   background: #eee;
   color: darkmagenta;
@@ -20,6 +46,14 @@ body {
   width: 300px;
   background: royalblue;
   box-sizing: border-box;
+  padding-left: 10px;
+  & > ul , a{
+    padding: 0px;
+    line-height: 2vw;
+    list-style-type: none;
+    text-decoration: none;
+    color: white;
+  }
 }
 
 .card {
