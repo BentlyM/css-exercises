@@ -5,6 +5,7 @@
 
 .container {
   display: grid;
+  height: 100vh;
   grid-template-columns: 1fr 4fr;
   gap: 4px;
   text-align: center;
@@ -82,6 +83,7 @@
 .article {
   display: grid;
   grid-template-columns: repeat(4,1fr);
+  grid-column-start: span ;
   gap: 10px;
   background-color: #bccbde;
 }
